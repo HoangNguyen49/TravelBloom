@@ -10,7 +10,7 @@ body {
 /* Header styling */
 header {
     background: linear-gradient(135deg, #2c3e50, #4a6278);
-    padding: 20px 40px;
+    padding: 15px 30px;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -21,6 +21,7 @@ header {
     z-index: 1000;
 }
 
+/* Navigation */
 nav ul {
     list-style-type: none;
     display: flex;
@@ -29,7 +30,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -50,27 +51,28 @@ nav ul li a:hover {
 /* About section styling */
 #about {
     background-color: #f5e6cc;
-    padding: 80px 40px;
+    padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 
 #about h1 {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 700;
     color: #2c3e50;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #about > p {
-    font-size: 20px;
+    font-size: 18px;
     color: #555;
     max-width: 800px;
-    margin: 0 auto 40px;
+    margin: 0 auto 30px;
 }
 
+/* About content layout */
 .about-content {
     display: flex;
     justify-content: space-between;
@@ -79,6 +81,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
+/* Text section */
 .about-text {
     flex: 1;
     text-align: left;
@@ -86,7 +89,7 @@ nav ul li a:hover {
 }
 
 .about-text h2 {
-    font-size: 32px;
+    font-size: 30px;
     color: #2c3e50;
     margin-bottom: 15px;
     font-weight: 600;
@@ -99,9 +102,11 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
+/* Image section */
 .about-image {
     flex: 1;
     min-width: 300px;
+    text-align: center;
 }
 
 .about-image img {
@@ -123,7 +128,105 @@ footer {
     padding: 20px;
     text-align: center;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #about {
+        padding: 50px 20px;
+    }
+
+    #about h1 {
+        font-size: 36px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #about {
+        padding: 40px 15px;
+    }
+
+    #about h1 {
+        font-size: 30px;
+    }
+
+    #about p {
+        font-size: 14px;
+    }
+
+    .about-text h2 {
+        font-size: 26px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #about h1 {
+        font-size: 26px;
+    }
+
+    #about p {
+        font-size: 14px;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .about-image img {
+        max-width: 90%;
+    }
 }
 
 /* Animation keyframes */

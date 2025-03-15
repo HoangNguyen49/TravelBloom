@@ -10,7 +10,7 @@ body {
 /* Header with gradient and shadow */
 header {
     background: linear-gradient(135deg, #2c3e50, #4a6278);
-    padding: 20px 40px;
+    padding: 15px 5%;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -19,26 +19,25 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    flex-wrap: wrap;
 }
 
 /* Navigation bar styling */
 nav ul {
     list-style-type: none;
     display: flex;
+    gap: 15px;
     margin: 0;
     padding: 0;
-}
-
-nav ul li {
-    margin: 0 20px;
+    flex-wrap: wrap;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    padding: 8px 16px;
+    padding: 8px 12px;
     border-radius: 25px;
     transition: all 0.3s ease;
 }
@@ -48,6 +47,20 @@ nav ul li a:hover {
     color: #f1c40f;
 }
 
+/* Responsive Navigation Menu */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 /* Search bar styling */
 #searchBar {
     display: flex;
@@ -55,43 +68,40 @@ nav ul li a:hover {
 }
 
 #searchInput {
-    padding: 12px 20px;
-    font-size: 16px;
+    padding: 10px 15px;
+    font-size: 14px;
     border: none;
-    border-radius: 25px 0 0 25px;
-    width: 250px;
-    background-color: #fff;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 25px 25px 25px;
+    width: 200px;
     transition: width 0.3s ease;
 }
 
 #searchInput:focus {
-    width: 300px;
+    width: 250px;
     outline: none;
 }
 
 #searchBtn {
-    padding: 12px 20px;
-    background: linear-gradient(135deg, #3498db, #2980b9);
-    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #007bff; 
+    color: white; 
     border: none;
-    border-radius: 0 25px 25px 0;
+    border-radius: 8px; 
+    margin-left: 8px;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 #searchBtn:hover {
-    background: linear-gradient(135deg, #2980b9, #1b6ca8);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #0056b3;
+    transform: translateY(-2px); 
 }
 
 /* Hero section styling */
 #hero {
     background: url('../images/background2.jpg') no-repeat center center/cover;
-    height: 600px;
+    height: 80vh;
     color: white;
     text-align: center;
     display: flex;
@@ -100,131 +110,93 @@ nav ul li a:hover {
     align-items: center;
     position: relative;
     overflow: hidden;
-}
-
-#hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-}
-
-#hero h1, #hero p, #bookBtn, #socialLinks {
-    position: relative;
-    z-index: 2;
+    padding: 20px;
 }
 
 #hero h1 {
-    font-size: 60px;
-    margin: 0;
-    font-weight: 700;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-    animation: fadeInDown 1s ease;
+    font-size: 50px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 #hero p {
-    font-size: 24px;
-    margin: 20px 0;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    animation: fadeInUp 1s ease 0.3s forwards;
-    opacity: 0;
+    font-size: 18px;
+    max-width: 80%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+    #hero {
+        height: 60vh;
+    }
+
+    #hero h1 {
+        font-size: 36px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero {
+        height: 50vh;
+    }
+
+    #hero h1 {
+        font-size: 28px;
+    }
+
+    #hero p {
+        font-size: 14px;
+    }
 }
 
 /* Book Now button styling */
 #bookBtn {
-    padding: 15px 35px;
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    display: inline-block;
-    width: auto;
-    max-width: 200px;
-}
-
-#bookBtn:hover {
-    background: linear-gradient(135deg, #c0392b, #a93226);
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    padding: 12px 25px;
+    font-size: 18px;
+    max-width: 180px;
 }
 
 /* Social links styling */
-#socialLinks {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 #socialLinks a {
-    color: white;
-    margin: 0 15px;
-    font-size: 28px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-#socialLinks a:hover {
-    color: #f1c40f;
-    transform: translateY(-3px);
+    font-size: 24px;
+    margin: 0 10px;
 }
 
 /* Search results styling */
 #searchResults {
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 30px 5%;
+    max-width: 100%;
+    margin: 20px auto;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin-top: -50px;
-    position: relative;
-    z-index: 10;
-}
-
-#searchResults h2 {
-    font-size: 32px;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
-
-#searchResults p {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.8;
 }
 
 #searchResults img {
-    width: 350px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    margin: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
 }
 
-#searchResults img:hover {
-    transform: scale(1.05);
+/* Responsive Search Results */
+@media (max-width: 768px) {
+    #searchResults {
+        padding: 20px;
+    }
 }
 
+/* Footer Styling */
 footer {
     background: linear-gradient(135deg, #2c3e50, #4a6278);
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* Animation keyframes */
