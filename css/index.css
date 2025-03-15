@@ -114,12 +114,15 @@ nav ul li a:hover {
 }
 
 #hero h1 {
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: 700;
+    padding-bottom: 100px;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 #hero p {
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: 300 ;
     max-width: 80%;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     opacity: 1;
@@ -159,6 +162,18 @@ nav ul li a:hover {
     padding: 12px 25px;
     font-size: 18px;
     max-width: 180px;
+    background-color: red; /* Màu nền đỏ */
+    color: white; /* Chữ màu trắng */
+    font-weight: bold; /* Chữ đậm */
+    border: none; /* Loại bỏ viền */
+    border-radius: 8px; /* Bo tròn góc */
+    cursor: pointer; /* Đổi con trỏ khi hover */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#bookBtn:hover {
+    background-color: darkred; /* Màu nền đậm hơn khi hover */
+    transform: scale(1.05); /* Hiệu ứng phóng to nhẹ khi hover */
 }
 
 /* Social links styling */
