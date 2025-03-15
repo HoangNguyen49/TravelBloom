@@ -1,0 +1,28 @@
+{
+    "destinations": [
+        {
+            "name": "Da Nang",
+            "keywords": ["beach", "danang", "city", "vietnam"],
+            "description": "Experience the vibrant city life and stunning beaches of Đà Nẵng, a coastal gem in central Vietnam. Known for its golden sands like My Khe Beach, modern skyline with iconic bridges like the Dragon Bridge, and proximity to historical sites such as Hoi An and My Son, this city blends urban excitement with natural beauty. Whether you're exploring bustling markets, savoring local cuisine like Mi Quang, or relaxing by the sea, Đà Nẵng offers a perfect balance of adventure and tranquility.",
+            "image1": "images/danang1.jpg",
+            "image2": "images/danang2.jpg",
+            "image3": "images/danang3.jpg"
+        },
+        {
+            "name": "Phu Quoc",
+            "keywords": ["beach", "island", "phuquoc", "vietnam"],
+            "description": "Relax on the pristine beaches of Phú Quốc, a tropical paradise off the southern coast of Vietnam. This island is famed for its crystal-clear waters, powdery white sands like Sao Beach, and lush greenery that invites nature lovers to explore. From snorkeling in vibrant coral reefs to wandering through bustling night markets offering fresh seafood and local specialties like fish sauce, Phú Quốc is a haven for those seeking both relaxation and authentic island experiences. Don’t miss the stunning sunsets that paint the sky in hues of orange and pink.",
+            "image1": "images/phuquoc1.jpg",
+            "image2": "images/phuquoc2.jpg",
+            "image3": "images/phuquoc3.jpg"
+        },
+        {
+            "name": "Ha Noi",
+            "keywords": ["capital", "hanoi", "culture", "vietnam"],
+            "description": "Explore the rich history and vibrant culture of Hà Nội, Vietnam's capital, where tradition meets modernity. Wander through the narrow streets of the Old Quarter, filled with colonial architecture, ancient temples like the Temple of Literature, and bustling shops selling everything from silk to street food like Pho and Banh Mi. Visit iconic landmarks such as Hoan Kiem Lake with its picturesque Ngoc Son Temple, or the solemn Ho Chi Minh Mausoleum. Hà Nội offers a captivating mix of historical depth, artistic heritage, and a lively urban pulse that reflects Vietnam’s soul.",
+            "image1": "images/hanoi1.jpg",
+            "image2": "images/hanoi2.jpg",
+            "image3": "images/hanoi3.jpg"
+        }
+    ]
+}

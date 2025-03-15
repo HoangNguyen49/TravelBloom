@@ -1,0 +1,251 @@
+/* Default reset and modern font */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+    line-height: 1.6;
+}
+
+/* Header with gradient and shadow */
+header {
+    background: linear-gradient(135deg, #2c3e50, #4a6278);
+    padding: 20px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation bar styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f1c40f;
+}
+
+/* Search bar styling */
+#searchBar {
+    display: flex;
+    align-items: center;
+}
+
+#searchInput {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+}
+
+#searchInput:focus {
+    width: 300px;
+    outline: none;
+}
+
+#searchBtn {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#searchBtn:hover {
+    background: linear-gradient(135deg, #2980b9, #1b6ca8);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero section styling */
+#hero {
+    background: url('../images/background2.jpg') no-repeat center center/cover;
+    height: 600px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+#hero h1, #hero p, #bookBtn, #socialLinks {
+    position: relative;
+    z-index: 2;
+}
+
+#hero h1 {
+    font-size: 60px;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    animation: fadeInDown 1s ease;
+}
+
+#hero p {
+    font-size: 24px;
+    margin: 20px 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease 0.3s forwards;
+    opacity: 0;
+}
+
+/* Book Now button styling */
+#bookBtn {
+    padding: 15px 35px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    width: auto;
+    max-width: 200px;
+}
+
+#bookBtn:hover {
+    background: linear-gradient(135deg, #c0392b, #a93226);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Social links styling */
+#socialLinks {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#socialLinks a {
+    color: white;
+    margin: 0 15px;
+    font-size: 28px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#socialLinks a:hover {
+    color: #f1c40f;
+    transform: translateY(-3px);
+}
+
+/* Search results styling */
+#searchResults {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
+}
+
+#searchResults h2 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#searchResults p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+#searchResults img {
+    width: 350px;
+    height: auto;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#searchResults img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: linear-gradient(135deg, #2c3e50, #4a6278);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+/* Animation keyframes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
